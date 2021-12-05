@@ -11,6 +11,7 @@ import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Navbar from './components/Navbar';
 import Dashboard from './components/Dashboard';
+import RegisterCust from './components/Customer/Register';
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -34,6 +35,7 @@ function App() {
             <Route exact path="/mechanic/show" element={<MechanicList />} />
             <Route exact path="/seller/dashboard" />
             <Route exact path="/seller/register" element={<RegisterC />} />
+            <Route exact path="/customer/register" element={<RegisterCust />} />
 
             <Route exact path="/seller/show" element={<SellerList />} />
             <Route exact path="/" element={<Dashboard />} />

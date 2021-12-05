@@ -6,6 +6,7 @@ import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import { Link } from 'react-router-dom';
 
 import CardContent from '@mui/material/CardContent';
 import { Button, CardActionArea, CardActions } from '@mui/material';
@@ -75,9 +76,11 @@ const Dashboard = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
+                <Link to="/seller/register">
+                  <Button size="small" color="primary">
+                    Share
+                  </Button>
+                </Link>
               </CardActions>
             </Card>
           </Grid>
@@ -88,7 +91,7 @@ const Dashboard = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/static/images/cards/contemplative-reptile.jpg"
+                  image="https://images.pexels.com/photos/10334730/pexels-photo-10334730.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                   alt="green iguana"
                 />
 
@@ -104,9 +107,11 @@ const Dashboard = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
+                <Link to="/mechanic/register">
+                  <Button size="small" color="primary">
+                    Share
+                  </Button>
+                </Link>
               </CardActions>
             </Card>
           </Grid>
@@ -117,7 +122,7 @@ const Dashboard = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/static/images/cards/contemplative-reptile.jpg"
+                  image="https://images.pexels.com/photos/10334730/pexels-photo-10334730.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                   alt="green iguana"
                 />
 
@@ -133,9 +138,11 @@ const Dashboard = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
+                <Link to="/customer/register">
+                  <Button size="small" color="primary">
+                    Share
+                  </Button>
+                </Link>
               </CardActions>
             </Card>
           </Grid>
