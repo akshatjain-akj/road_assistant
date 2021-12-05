@@ -69,9 +69,9 @@ const Dashboard = () => {
                     REGISTER AS A SELLER
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    {' '}
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quisquam, voluptas!
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -100,9 +100,9 @@ const Dashboard = () => {
                     REGISTER AS A MECHANIC
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    {' '}
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quisquam, voluptas!
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -131,9 +131,8 @@ const Dashboard = () => {
                     REGISTER AS A CUSTOMER
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quisquam, voluptas!
                   </Typography>
                 </CardContent>
               </CardActionArea>
