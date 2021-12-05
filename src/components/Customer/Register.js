@@ -24,7 +24,12 @@ const Register = () => {
               <input type="text" placeholder="Name" className="textbox" />
               <input type="text" placeholder="State" className="textbox" />
               <input type="text" placeholder="City" className="textbox" />
-              <input type="text" placeholder="Parts" className="textbox" />
+              <input
+                type="text"
+                placeholder="Vehicle Number"
+                className="textbox"
+              />
+              <input type="number" placeholder="Phone" className="textbox" />
               {/* <Button>Submit</Button> */}
               <Button variant="outlined" className="textbox">
                 Submit

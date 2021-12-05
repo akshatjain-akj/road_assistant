@@ -1,13 +1,16 @@
 import React from 'react';
 import '../Main.css';
 
+import Button from '@mui/material/Button';
+
 const Register = () => {
   return (
     <div>
-      <div class="row">
+      <div className="row">
         <div id="bg">
-          <div class="module">
-            <ul>
+          <div className="module">
+            <ul className="img2">
+              <h2 className="text">Register as Seller</h2>
               <li class="tab activeTab">
                 <img
                   src="https://i.imgur.com/Fk1Urva.png"
@@ -15,40 +18,24 @@ const Register = () => {
                   class="icon"
                 />
               </li>
-              <li class="tab">
-                <img
-                  src="https://i.imgur.com/ZsRgIDD.png"
-                  alt=""
-                  class="icon"
-                />
-              </li>
-              <li class="tab">
-                <img
-                  src="https://i.imgur.com/34Q50wo.png"
-                  alt=""
-                  class="icon"
-                />
-              </li>
-              <li class="tab">
-                <img
-                  src="https://i.imgur.com/LCCJ06E.png"
-                  alt=""
-                  class="icon"
-                />
-              </li>
             </ul>
 
-            <form class="form">
-              <input type="text" placeholder="Email Address" class="textbox" />
-              <input type="password" placeholder="Password" class="textbox" />
-              <input type="button" value="Next" class="button" />
+            <form className="form" action="/">
+              <input type="text" placeholder="Name" className="textbox" />
+              <input type="text" placeholder="State" className="textbox" />
+              <input type="text" placeholder="City" className="textbox" />
+              <input
+                type="text"
+                placeholder="Vehicle Type"
+                className="textbox"
+              />
+              {/* <Button>Submit</Button> */}
+              <Button variant="outlined" className="textbox">
+                Submit
+              </Button>
             </form>
           </div>
         </div>
-
-        <a href="http://dribbble.com/shots/1265587-Registration-Template-PSD?list=everyone">
-          Design by: Asif Aleem
-        </a>
       </div>
     </div>
   );
