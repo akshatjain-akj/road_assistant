@@ -8,6 +8,7 @@ import Toolbar from '@mui/material/Toolbar';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -27,8 +28,12 @@ const Navbar = () => {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               RoadAssist
             </Typography>
-            <Button color="inherit">About Us</Button>
-            <Button color="inherit">Register/Login</Button>
+            {/* <Link to="/customer/mechanic/show"> */}
+            <Button color="inherit"> mechanic customer</Button>
+            {/* </Link> */}
+            {/* <Link to="/customer/seller/show"> */}
+            <Button color="inherit"> seller customer</Button>
+            {/* </Link> */}
             <Button color="inherit">Contact Us</Button>
           </Toolbar>
         </AppBar>
