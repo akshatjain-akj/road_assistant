@@ -82,7 +82,7 @@ const Dashboard = () => {
                     Share
                   </Button>
                 </Link>
-                <Link to="/customer/seller/show">
+                <Link to="/seller/customer/show">
                   <Button size="small" color="primary">
                     Customers
                   </Button>
@@ -118,7 +118,7 @@ const Dashboard = () => {
                     Share
                   </Button>
                 </Link>
-                <Link to="/customer/mechanic/show">
+                <Link to="/mechanic/customer/show">
                   <Button size="small" color="primary">
                     Customers
                   </Button>

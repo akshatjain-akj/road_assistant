@@ -41,12 +41,12 @@ function App() {
 
             <Route
               exact
-              path="/customer/mechanic/show"
+              path="/mechanic/customer/show"
               element={<ShowCustomerMechanic />}
             />
             <Route
               exact
-              path="/customer/seller/show"
+              path="seller/customer/show"
               element={<ShowCustomerSeller />}
             />
             <Route exact path="/" element={<Dashboard />} />
