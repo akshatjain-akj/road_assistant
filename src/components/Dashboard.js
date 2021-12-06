@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 import CardContent from '@mui/material/CardContent';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-import { NavLink } from 'react-router-dom';
+import Login from './Login.js';
 
 const Dashboard = () => {
   return (
@@ -79,7 +79,7 @@ const Dashboard = () => {
               <CardActions>
                 <Link to="/seller/register">
                   <Button size="small" color="primary">
-                    Share
+                    Register
                   </Button>
                 </Link>
                 <Link to="/seller/customer/show">
@@ -115,7 +115,7 @@ const Dashboard = () => {
               <CardActions>
                 <Link to="/mechanic/register">
                   <Button size="small" color="primary">
-                    Share
+                    Register
                   </Button>
                 </Link>
                 <Link to="/mechanic/customer/show">
@@ -148,11 +148,11 @@ const Dashboard = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                {/* <Link to="/customer/register"> */}
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                {/* </Link> */}
+                <Link to="/customer/register">
+                  <Button size="small" color="primary">
+                    Register
+                  </Button>
+                </Link>
               </CardActions>
             </Card>
           </Grid>

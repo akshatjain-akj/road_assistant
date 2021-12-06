@@ -21,7 +21,12 @@ const Register = () => {
             </ul>
 
             <form className="form" action="/">
-              <input type="text" placeholder="Name" className="textbox" />
+              <input type="text" placeholder="Userame" className="textbox" />
+              <input
+                type="password"
+                placeholder="Password"
+                className="textbox"
+              />
               <input type="text" placeholder="State" className="textbox" />
               <input type="text" placeholder="City" className="textbox" />
               <input type="text" placeholder="Parts" className="textbox" />

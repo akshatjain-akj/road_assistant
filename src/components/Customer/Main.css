@@ -20,7 +20,7 @@ a {
 #bg {
   position: relative;
   top: 10px;
-  height: 620px;
+  height: 640px;
   width: 800px;
   background: url('https://i.imgur.com/3eP9Z4O.png') center no-repeat;
   background-size: cover;
@@ -36,10 +36,10 @@ a {
   justify-content: center;
   align-items: center;
 }
-.module {
+.module1 {
   position: relative;
   top: 2%;
-  height: 85%;
+  height: 96%;
   width: 450px;
   margin-left: auto;
   margin-right: auto;
