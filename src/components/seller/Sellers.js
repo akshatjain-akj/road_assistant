@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 // import Card from '../Cards/Card';
 import Container from '@mui/material/Container';
 import { Grid } from '@mui/material';
@@ -56,52 +56,34 @@ export default class sellers extends Component {
     super();
 
     this.state = {
-      sell:[]
-      
-     
+      sell: [],
     };
     this.seller_data = this.seller_data.bind(this);
     // this.seller = this.seller.bind(this);
-   
-
+    // this is a comment !
   }
   seller_data() {
-    
-      console.log(this.state);
-      axios({
-        method: 'post',
-        url: `${PATH}`,
-        headers: { 'content-type': 'application/json' },
-        data: this.state
-
+    console.log(this.state);
+    axios({
+      method: 'post',
+      url: `${PATH}`,
+      headers: { 'content-type': 'application/json' },
+      data: this.state,
+    })
+      .then((result) => {
+        this.setState({
+          sell: result.data,
+        });
       })
-        .then(result => {
-
-
-          
-          this.setState({
-            sell: result.data
-          })
-
-        })
-        .catch(error => this.setState({ }));
-
-
-    
-
+      .catch((error) => this.setState({}));
   }
-  componentDidMount = () => { 
-   
-    
+  componentDidMount = () => {
     this.seller_data();
-    
- }
+  };
 
- componentDidUpdate = () => {  
-    
+  componentDidUpdate = () => {
     this.seller_data();
-    
- }
+  };
   Seller = () => {
     return (
       <div>
@@ -128,12 +110,13 @@ export default class sellers extends Component {
                         {el.name}
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
-                       Parts Availaible for: {el.type}
+                        Parts Availaible for: {el.type}
                       </Typography>
                     </CardContent>
                     <CardActions>
-                      <h5>Location: {el.city},{el.state}</h5>
-                      
+                      <h5>
+                        Location: {el.city},{el.state}
+                      </h5>
                     </CardActions>
                   </Card>
                 </Grid>
@@ -145,10 +128,6 @@ export default class sellers extends Component {
     );
   };
   render() {
-
-    return (
-        this.Seller()
-
-    );
+    return this.Seller();
   }
 }

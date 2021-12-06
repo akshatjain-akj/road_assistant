@@ -26,15 +26,27 @@ const Navbar = () => {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              RoadAssist
+              <Link
+                to="/"
+                style={{ color: '#fff', marginTop: '0px', display: 'inline' }}
+              >
+                <Button color="inherit">RoadAssist </Button>
+              </Link>
             </Typography>
             {/* <Link to="/customer/mechanic/show"> */}
-            <Button color="inherit"> mechanic customer</Button>
+            {/* <Button color="inherit"> mechanic customer</Button> */}
             {/* </Link> */}
-            {/* <Link to="/customer/seller/show"> */}
-            <Button color="inherit"> seller customer</Button>
+            {/* <Link to="/customer/seller/show"> */}{' '}
+            <Link to="/login" style={{ color: '#fff', marginTop: '0px' }}>
+              <Button color="inherit">Login </Button>
+            </Link>
             {/* </Link> */}
-            <Button color="inherit">Contact Us</Button>
+            {/* <Button color="primary">
+              {' '}
+              <Link to="/login" color="primary">
+                Login
+              </Link>
+            </Button> */}
           </Toolbar>
         </AppBar>
       </Box>
