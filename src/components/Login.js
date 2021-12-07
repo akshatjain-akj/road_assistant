@@ -71,12 +71,6 @@ export default class sellers extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    // const data = new FormData(event.currentTarget);
-    // // eslint-disable-next-line no-console
-    // console.log({
-    //   email: data.get('email'),
-    //   password: data.get('password'),
-    // });
   };
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
