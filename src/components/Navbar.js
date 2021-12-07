@@ -9,6 +9,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
+import SupportSharpIcon from '@mui/icons-material/SupportSharp';
 
 const Navbar = () => {
   return (
@@ -23,7 +24,7 @@ const Navbar = () => {
               aria-label="menu"
               sx={{ mr: 2 }}
             >
-              <MenuIcon />
+              <SupportSharpIcon />
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               <Link
@@ -33,20 +34,19 @@ const Navbar = () => {
                 <Button color="inherit">RoadAssist </Button>
               </Link>
             </Typography>
-            {/* <Link to="/customer/mechanic/show"> */}
-            {/* <Button color="inherit"> mechanic customer</Button> */}
-            {/* </Link> */}
-            {/* <Link to="/customer/seller/show"> */}{' '}
+            <Link
+              to="/mechanic/show"
+              style={{ color: '#fff', marginTop: '0px' }}
+            >
+              <Button color="inherit">Mechanic </Button>
+            </Link>
+            <Link to="/seller/show" style={{ color: '#fff', marginTop: '0px' }}>
+              <Button color="inherit">Seller </Button>
+            </Link>
+
             <Link to="/login" style={{ color: '#fff', marginTop: '0px' }}>
               <Button color="inherit">Login </Button>
             </Link>
-            {/* </Link> */}
-            {/* <Button color="primary">
-              {' '}
-              <Link to="/login" color="primary">
-                Login
-              </Link>
-            </Button> */}
           </Toolbar>
         </AppBar>
       </Box>

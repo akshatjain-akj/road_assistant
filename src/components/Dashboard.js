@@ -11,6 +11,10 @@ import { Link } from 'react-router-dom';
 import CardContent from '@mui/material/CardContent';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import Login from './Login.js';
+import sellerImage from '../Images/seller.jpg';
+import mechanicImage from '../Images/mechanic.jpg';
+import customerImage from '../Images/customer.jpg.jpeg';
+import Aboutus from './Aboutus';
 
 const Dashboard = () => {
   return (
@@ -37,14 +41,14 @@ const Dashboard = () => {
             justifyContent="center"
             alignItems="center"
           >
-            <Typography variant="h5" color="white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-              officia ex cupiditate, sequi aperiam aliquid suscipit praesentium
-              numquam eos! Repudiandae. Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Ad eos, excepturi quae officia provident omnis
-              voluptatibus fuga reprehenderit nisi ullam!lorem20 Lorem, ipsum
-              dolor sit amet consectetur adipisicing elit. Doloribus, eius.
-              Quaerat sequi sunt quis sit!
+            <Typography variant="h6" color="white">
+              {/* Road Assistant a web app made for h */}
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ea
+              impedit eos vitae ipsa odit. Culpa hic consequuntur ab.
+              Fuga.lorem30 Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Molestiae natus soluta ipsam. Esse officia assumenda
+              temporibus aspernatur aliquam animi alias nam distinctio
+              doloremque possimus, illo eos accusamus nisi ab! Aut.
             </Typography>
           </Grid>
         </Grid>
@@ -61,12 +65,13 @@ const Dashboard = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="https://images.pexels.com/photos/10334730/pexels-photo-10334730.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  // image="https://images.pexels.com/photos/10334730/pexels-photo-10334730.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  image={sellerImage}
                   alt="green iguana"
                 />
 
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography gutterBottom variant="h6" component="div">
                     REGISTER AS A SELLER
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
@@ -97,12 +102,13 @@ const Dashboard = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="https://images.pexels.com/photos/10334730/pexels-photo-10334730.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  // image="https://images.pexels.com/photos/10334730/pexels-photo-10334730.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  image={mechanicImage}
                   alt="green iguana"
                 />
 
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography gutterBottom variant="h6" component="div">
                     REGISTER AS A MECHANIC
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
@@ -133,12 +139,13 @@ const Dashboard = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="https://images.pexels.com/photos/10334730/pexels-photo-10334730.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  // image="https://images.pexels.com/photos/10334730/pexels-photo-10334730.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  image={customerImage}
                   alt="green iguana"
                 />
 
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography gutterBottom variant="h6" component="div">
                     REGISTER AS A CUSTOMER
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
@@ -155,6 +162,10 @@ const Dashboard = () => {
                 </Link>
               </CardActions>
             </Card>
+          </Grid>
+
+          <Grid xs={12}>
+            <Aboutus />
           </Grid>
         </Grid>
       </Container>

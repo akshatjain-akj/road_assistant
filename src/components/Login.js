@@ -19,24 +19,6 @@ import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import HelpIcon from '@mui/icons-material/Help';
 
-function Copyright(props) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
 const theme = createTheme();
 
 export default function SignInSide() {
@@ -148,34 +130,6 @@ export default function SignInSide() {
               >
                 Login
               </Button>
-
-              {/* <FormControl component="fieldset" style={{ marginTop: '10px' }}>
-                
-                <RadioGroup
-                  aria-label="identity"
-                  name="identity"
-                  value={value}
-                  onChange={handleChange}
-                >
-                  <FormControlLabel
-                    value="seller"
-                    control={<Radio />}
-                    label="Seller"
-                  />
-                  <FormControlLabel
-                    value="mechanic"
-                    control={<Radio />}
-                    label="Mechanic"
-                  />
-                  <FormControlLabel
-                    value="customer"
-                    control={<Radio />}
-                    label="Customer"
-                  />
-                </RadioGroup>
-              </FormControl> */}
-
-              {/* <Copyright sx={{ mt: 5 }} /> */}
             </Box>
           </Box>
         </Grid>
