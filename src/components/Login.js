@@ -1,4 +1,4 @@
-import React, { Component }from 'react';
+import React, { Component } from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -18,7 +18,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import HelpIcon from '@mui/icons-material/Help';
-import axios from'axios';
+import axios from 'axios';
 const PATH = 'http://localhost/road/login.php';
 const theme = createTheme();
 
@@ -27,11 +27,10 @@ export default class sellers extends Component {
     super();
 
     this.state = {
-      Username:'',
-      password:'',
-      identity:'',
-      msg:''
-
+      Username: '',
+      password: '',
+      identity: '',
+      msg: '',
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.onChange = this.onChange.bind(this);
@@ -45,61 +44,39 @@ export default class sellers extends Component {
         method: 'post',
         url: `${PATH}`,
         headers: { 'content-type': 'application/json' },
-        data: this.state
-
+        data: this.state,
       })
-        .then(result => {
-
-
+        .then((result) => {
           alert(result.data[0].Message);
           this.setState({
-            msg: result.data[0].Message
-          })
-
+            msg: result.data[0].Message,
+          });
 
           if (result.data[0].Message == 'selllog') {
             //localStorage.setItem('email', JSON.stringify(this.state.email));
-            window.open("/seller/customer/show", "_self")
-            
-
+            window.open('/seller/customer/show', '_self');
           }
           if (result.data[0].Message == 'mechlog') {
             //localStorage.setItem('email', JSON.stringify(this.state.email));
-            window.open("/mechanic/customer/show", "_self")
-            
-
+            window.open('/mechanic/customer/show', '_self');
           }
           if (result.data[0].Message == 'custlog') {
             //localStorage.setItem('email', JSON.stringify(this.state.email));
-            window.open("/seller/show", "_self")
-            
-
+            window.open('/seller/show', '_self');
           }
-
         })
-        .catch(error => this.setState({}));
-
-
+        .catch((error) => this.setState({}));
     }
-
   }
 
- handleSubmit = (event) => {
+  handleSubmit = (event) => {
     event.preventDefault();
-    // const data = new FormData(event.currentTarget);
-    // // eslint-disable-next-line no-console
-    // console.log({
-    //   email: data.get('email'),
-    //   password: data.get('password'),
-    // });
   };
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
     console.log(this.state);
-
   }
-  render()
-   {
+  render() {
     return (
       <ThemeProvider theme={theme}>
         <Grid container component="main" sx={{ height: '100vh' }}>
@@ -120,7 +97,15 @@ export default class sellers extends Component {
               backgroundPosition: 'center',
             }}
           />
-          <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+          <Grid
+            item
+            xs={12}
+            sm={8}
+            md={5}
+            component={Paper}
+            elevation={6}
+            square
+          >
             <Box
               sx={{
                 my: 8,
@@ -164,12 +149,17 @@ export default class sellers extends Component {
                   autoComplete="current-password"
                   onChange={this.onChange}
                 />
-  
+
                 <FormControl component="fieldset">
                   <Typography component="h1" variant="h5">
                     Choose your category <HelpIcon />
                   </Typography>
-                  <RadioGroup row name="identity" aria-label="identity"  onChange={this.onChange}>
+                  <RadioGroup
+                    row
+                    name="identity"
+                    aria-label="identity"
+                    onChange={this.onChange}
+                  >
                     <FormControlLabel
                       value="customer"
                       control={<Radio />}
@@ -195,9 +185,8 @@ export default class sellers extends Component {
                   onClick={this.login}
                 >
                   Login
-                  
                 </Button>
-  
+
                 {/* <FormControl component="fieldset" style={{ marginTop: '10px' }}>
                   
                   <RadioGroup
@@ -223,7 +212,7 @@ export default class sellers extends Component {
                     />
                   </RadioGroup>
                 </FormControl> */}
-  
+
                 {/* <Copyright sx={{ mt: 5 }} /> */}
               </Box>
             </Box>
@@ -231,8 +220,5 @@ export default class sellers extends Component {
         </Grid>
       </ThemeProvider>
     );
-
   }
-
-  
 }
