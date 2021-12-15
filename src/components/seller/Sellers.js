@@ -117,7 +117,7 @@ export default class sellers extends Component {
   };
   Seller = () => {
     return (
-      <div>
+      <>
         <Container>
           <Box sx={{ flexGrow: 1 }} style={{ marginTop: '10px' }}>
             <AppBar position="static">
@@ -154,7 +154,7 @@ export default class sellers extends Component {
                       component="img"
                       height="140"
                       image="https://images.pexels.com/photos/10334730/pexels-photo-10334730.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                      alt="green iguana"
+                      alt="person"
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
@@ -183,7 +183,7 @@ export default class sellers extends Component {
             })}
           </Grid>
         </Container>
-      </div>
+      </>
     );
   };
   render() {

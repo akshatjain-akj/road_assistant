@@ -37,6 +37,7 @@
   background-color: transparent;
   color: var(--primary-color);
   box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5);
+  margin-bottom: 1rem;
 }
 
 .btn-style-border:hover {
