@@ -41,14 +41,16 @@ const Dashboard = () => {
             justifyContent="center"
             alignItems="center"
           >
-            <Typography variant="h6" color="white">
+            <Typography variant="h2" color="black">
               {/* Road Assistant a web app made for h */}
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ea
-              impedit eos vitae ipsa odit. Culpa hic consequuntur ab.
-              Fuga.lorem30 Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Molestiae natus soluta ipsam. Esse officia assumenda
-              temporibus aspernatur aliquam animi alias nam distinctio
-              doloremque possimus, illo eos accusamus nisi ab! Aut.
+              Are you a wanderlust ? And while travelling your vechicle is
+              unable to move forward ?
+            </Typography>
+            <Typography variant="h5" color="black">
+              {/* Road Assistant a web app made for h */}
+              Then you are at a right place to solve the problem ! This is a web
+              app road assistant which helps travellers like you to make you
+              journey smooth and worry less.
             </Typography>
           </Grid>
         </Grid>
@@ -70,19 +72,18 @@ const Dashboard = () => {
                   alt="green iguana"
                 />
 
-                <CardContent>
+                <CardContent style={{ padding: '10px' }}>
                   <Typography gutterBottom variant="h6" component="div">
                     REGISTER AS A SELLER
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     {' '}
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quisquam, voluptas!
+                    Help travellers by selling your vechicle parts !
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions style={{ justifyContent: 'center' }}>
-                <Link to="/seller/register">
+                <Link to="/seller/register" style={{ marginTop: '15px' }}>
                   <Button size="small" color="primary">
                     Register
                   </Button>
@@ -107,19 +108,18 @@ const Dashboard = () => {
                   alt="green iguana"
                 />
 
-                <CardContent>
+                <CardContent style={{ padding: '10px' }}>
                   <Typography gutterBottom variant="h6" component="div">
                     REGISTER AS A MECHANIC
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     {' '}
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quisquam, voluptas!
+                    Help travellers by offering your mechanic service !
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions style={{ justifyContent: 'center' }}>
-                <Link to="/mechanic/register">
+                <Link to="/mechanic/register" style={{ marginTop: '15px' }}>
                   <Button size="small" color="primary">
                     Register
                   </Button>
@@ -144,18 +144,17 @@ const Dashboard = () => {
                   alt="green iguana"
                 />
 
-                <CardContent>
+                <CardContent style={{ padding: '10px' }}>
                   <Typography gutterBottom variant="h6" component="div">
                     REGISTER AS A CUSTOMER
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quisquam, voluptas!
+                    Let the mechanics / sellers take care of your vehicle
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions style={{ justifyContent: 'center' }}>
-                <Link to="/customer/register">
+                <Link to="/customer/register" style={{ marginTop: '0px' }}>
                   <Button size="small" color="primary">
                     Register
                   </Button>
