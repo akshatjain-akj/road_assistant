@@ -40,13 +40,35 @@ const Dashboard = () => {
             container
             justifyContent="center"
             alignItems="center"
+            // style={{ border: '2px solid green' }}
           >
-            <Typography variant="h2" color="black">
+            <Typography
+              variant="h2"
+              color="black"
+              style={{
+                /* border: 2px solid; */
+                background: '#fff',
+                border: '2xp solid #fff',
+                padding: '10px',
+                borderRadius: '30px',
+              }}
+            >
               {/* Road Assistant a web app made for h */}
               Are you a wanderlust ? And while travelling your vechicle is
               unable to move forward ?
             </Typography>
-            <Typography variant="h5" color="black">
+            <Typography
+              variant="h5"
+              color="black"
+              style={{
+                /* border: 2px solid; */
+                background: '#fff',
+                border: '2xp solid #fff',
+                padding: '10px',
+                borderRadius: '30px',
+                marginTop: '5px',
+              }}
+            >
               {/* Road Assistant a web app made for h */}
               Then you are at a right place to solve the problem ! This is a web
               app road assistant which helps travellers like you to make you

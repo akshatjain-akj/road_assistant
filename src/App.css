@@ -4,11 +4,17 @@
 }
 
 .bg-img {
-  background-image: url('./Images/bgimg2.jpg');
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.22),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url('./Images/bgimg2.jpg');
+  /* background-image: url('./Images/bgimg2.jpg'); */
   /* height: 100vh; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* opacity: 0.9; */
 }
 
 .btn-style {
