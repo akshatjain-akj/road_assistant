@@ -8,17 +8,20 @@ const aboutData = [
   {
     id: 1,
     title: 'Register',
-    info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, Etquia quis?Lorem ipsum,  Etquia quis?',
+    // info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, Etquia quis?Lorem ipsum,  Etquia quis?',
+    info: '',
   },
   {
     id: 2,
     title: 'Add your details',
-    info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+    // info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+    info: '',
   },
   {
     id: 3,
     title: 'Get your desired mechanic , register , customer !',
-    info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, consectetur adipisicing elit. Etquia quis?Lorem ipsum?',
+    // info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, consectetur adipisicing elit. Etquia quis?Lorem ipsum?',
+    info: '',
   },
 ];
 const Aboutus = () => {
