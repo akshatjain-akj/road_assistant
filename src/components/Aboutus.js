@@ -2,22 +2,22 @@ import React, { useState } from 'react';
 // import howToUseApp from './API/howToUse.js';
 
 import './Aboutus.css';
-import ImageHero from '../Images/hero3.jpg';
+import ImageHero from '../Images/img3.webp';
 
 const aboutData = [
   {
     id: 1,
-    title: 'Sign in',
+    title: 'Register',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, Etquia quis?Lorem ipsum,  Etquia quis?',
   },
   {
     id: 2,
-    title: 'Add your bank Account',
+    title: 'Add your details',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
   },
   {
     id: 3,
-    title: 'Send payment request',
+    title: 'Get your desired mechanic , register , customer !',
     info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, consectetur adipisicing elit. Etquia quis?Lorem ipsum?',
   },
 ];

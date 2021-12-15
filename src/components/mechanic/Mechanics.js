@@ -47,7 +47,7 @@ export default class mechanics extends Component {
   };
   Mechanic = () => {
     return (
-      <div>
+      <>
         <Container>
           <Grid
             container
@@ -95,7 +95,7 @@ export default class mechanics extends Component {
             })}
           </Grid>
         </Container>
-      </div>
+      </>
     );
   };
   render() {

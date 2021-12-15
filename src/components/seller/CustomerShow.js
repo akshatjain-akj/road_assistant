@@ -17,12 +17,11 @@ export default class customershow extends Component {
     super();
 
     this.state = {
-      username:'',
-      cust:[],
-      stop:'no'
+      username: '',
+      cust: [],
+      stop: 'no',
     };
     this.cust_data = this.cust_data.bind(this);
-    
   }
   cust_data() {
     console.log(this.state);
@@ -34,40 +33,33 @@ export default class customershow extends Component {
     })
       .then((result) => {
         // alert(result.data);
-        if(this.state.stop=='no')
-        {
+        if (this.state.stop == 'no') {
           this.setState({
             cust: result.data,
-            stop:'yes'
+            stop: 'yes',
           });
         }
-        
       })
       .catch((error) => this.setState({}));
   }
   componentDidMount = () => {
-
-    let username = localStorage.username
+    let username = localStorage.username;
     if (username != undefined) {
       this.setState({
-        username: JSON.parse(username)
+        username: JSON.parse(username),
       });
     }
     // this.cust_data();
-
-
-  }
+  };
   componentDidUpdate = () => {
     this.cust_data();
     console.log(this.state);
-    
-
-  }
+  };
 
   render() {
     return (
-      <div>
-        <Container>
+      <>
+        <Container style={{ height: '80vh' }}>
           <Grid
             container
             spacing={2}
@@ -112,11 +104,7 @@ export default class customershow extends Component {
             })}
           </Grid>
         </Container>
-      </div>
+      </>
     );
-
   }
- 
-};
-
-
+}
