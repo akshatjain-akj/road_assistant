@@ -76,7 +76,7 @@ export default class mechanics extends Component {
                         PhoneNo:{el.phone}
                       </Typography>
                     </CardContent>
-                    <CardActions>
+                    <CardActions style={{ justifyContent: 'space-between' }}>
                       <h5>
                         Location: {el.city},{el.state}
                       </h5>

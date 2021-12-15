@@ -81,17 +81,17 @@ const Dashboard = () => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
+              <CardActions style={{ justifyContent: 'center' }}>
                 <Link to="/seller/register">
                   <Button size="small" color="primary">
                     Register
                   </Button>
                 </Link>
-                <Link to="/seller/customer/show">
+                {/* <Link to="/seller/customer/show">
                   <Button size="small" color="primary">
                     Customers
                   </Button>
-                </Link>
+                </Link> */}
               </CardActions>
             </Card>
           </Grid>
@@ -118,17 +118,17 @@ const Dashboard = () => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
+              <CardActions style={{ justifyContent: 'center' }}>
                 <Link to="/mechanic/register">
                   <Button size="small" color="primary">
                     Register
                   </Button>
                 </Link>
-                <Link to="/mechanic/customer/show">
+                {/* <Link to="/mechanic/customer/show">
                   <Button size="small" color="primary">
                     Customers
                   </Button>
-                </Link>
+                </Link> */}
               </CardActions>
             </Card>
           </Grid>
@@ -154,7 +154,7 @@ const Dashboard = () => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
+              <CardActions style={{ justifyContent: 'center' }}>
                 <Link to="/customer/register">
                   <Button size="small" color="primary">
                     Register
