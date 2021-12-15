@@ -85,7 +85,11 @@ export default class customershow extends Component {
                         Vehicle: {el.type}
                       </Typography>
                     </CardContent>
-                    <CardActions>
+                    <CardActions
+                      style={{
+                        justifyContent: 'space-between',
+                      }}
+                    >
                       <h5>
                         Location: {el.city},{el.state}
                       </h5>

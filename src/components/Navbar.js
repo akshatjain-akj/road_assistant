@@ -42,7 +42,7 @@ const Navbar = () => {
               </Link>
             </Typography>
 
-            <Link
+            {/* <Link
               to="/mechanic/show"
               style={{ color: '#fff', marginTop: '0px' }}
             >
@@ -51,7 +51,7 @@ const Navbar = () => {
 
             <Link to="/seller/show" style={{ color: '#fff', marginTop: '0px' }}>
               <Button color="inherit">Seller </Button>
-            </Link>
+            </Link> */}
 
             <Link to="/login" style={{ color: '#fff', marginTop: '0px' }}>
               <Button color="inherit">Login </Button>
