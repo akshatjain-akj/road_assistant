@@ -27,6 +27,7 @@ import IconButton from '@mui/material/IconButton';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import profileImage from '../../Images/whatsapp_profile.jpg';
 
 const PATH = 'http://localhost/road/seller.php';
 const PATH2 = 'http://localhost/road/Mechanic.php';
@@ -81,9 +82,9 @@ export default class sellers extends Component {
       sell: [],
       stop: 'no',
       stop1: 'no',
-      city:'',
-      state:'',
-      mech:[]
+      city: '',
+      state: '',
+      mech: [],
     };
     this.seller_data = this.seller_data.bind(this);
     this.find = this.find.bind(this);
@@ -120,18 +121,15 @@ export default class sellers extends Component {
       data: this.state,
     })
       .then((result) => {
-       
-          this.setState({
-            sell: result.data,
-          });
-        
+        this.setState({
+          sell: result.data,
+        });
       })
       .catch((error) => this.setState({}));
   }
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
     console.log(this.state);
-
   }
   find1() {
     console.log(this.state);
@@ -142,18 +140,15 @@ export default class sellers extends Component {
       data: this.state,
     })
       .then((result) => {
-       
-          this.setState({
-            mech: result.data,
-          });
-        
+        this.setState({
+          mech: result.data,
+        });
       })
       .catch((error) => this.setState({}));
   }
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
     console.log(this.state);
-
   }
   mechanic_data() {
     console.log(this.state);
@@ -164,14 +159,12 @@ export default class sellers extends Component {
       data: this.state,
     })
       .then((result) => {
-        if(this.state.stop1=='no')
-        {
+        if (this.state.stop1 == 'no') {
           this.setState({
             mech: result.data,
-            stop1:'yes'
+            stop1: 'yes',
           });
         }
-       
       })
       .catch((error) => this.setState({}));
   }
@@ -193,12 +186,11 @@ export default class sellers extends Component {
   Seller = () => {
     return (
       <>
-     
         <Container>
           <Box sx={{ flexGrow: 1 }} style={{ marginTop: '10px' }}>
             <AppBar position="static">
               <Toolbar>
-              <TextField
+                <TextField
                   id="standard-basic"
                   label="City"
                   variant="standard"
@@ -213,8 +205,12 @@ export default class sellers extends Component {
                   name="state"
                   onChange={this.onChange}
                 />
-            
-                <Button color="inherit" variant="outlined" onClick={(event) => [this.find(), this.find1()]}>
+
+                <Button
+                  color="inherit"
+                  variant="outlined"
+                  onClick={(event) => [this.find(), this.find1()]}
+                >
                   Find{' '}
                 </Button>
               </Toolbar>
@@ -227,7 +223,7 @@ export default class sellers extends Component {
             justifyContent="center"
             alignItems="center"
           >
-             <h1>Seller Availaible</h1>
+            <h1>Seller Availaible</h1>
             {this.state.sell.map((el, idx) => {
               return (
                 <Grid item xs={12} sm={6} md={4} key={idx}>
@@ -235,7 +231,10 @@ export default class sellers extends Component {
                     <CardMedia
                       component="img"
                       height="140"
-                      image="https://images.pexels.com/photos/10334730/pexels-photo-10334730.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                      image={profileImage}
+                      // image={`https://randomuser.me/api/portraits/men/${
+                      //   Math.floor(Math.random() * 100) % 80
+                      // }.jpg`}
                       alt="person"
                     />
                     <CardContent>
@@ -254,7 +253,7 @@ export default class sellers extends Component {
                         to="/customer/register"
                         style={{ textDecoration: 'none' }}
                       >
-                        <Button size="small" color="primary" variant="outlined" >
+                        <Button size="small" color="primary" variant="outlined">
                           Contact
                         </Button>
                       </Link>
@@ -281,7 +280,8 @@ export default class sellers extends Component {
                     <CardMedia
                       component="img"
                       height="140"
-                      image="https://images.pexels.com/photos/10334730/pexels-photo-10334730.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                      // image="https://images.pexels.com/photos/10334730/pexels-photo-10334730.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                      image={profileImage}
                       alt="green iguana"
                     />
                     <CardContent>
@@ -302,7 +302,7 @@ export default class sellers extends Component {
                         to="/customer/register"
                         style={{ textDecoration: 'none' }}
                       >
-                        <Button size="small" color="primary" variant="outlined" >
+                        <Button size="small" color="primary" variant="outlined">
                           Contact
                         </Button>
                       </Link>
